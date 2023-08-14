@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-3bxn6((4hsjz@ipok+s+pw2_0n0#vjg$dw1)n9=t&782)-m02@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '16.170.205.114']
 
 #'lxdlwbubuykzarrx'
 # Application definition
@@ -51,8 +51,6 @@ INSTALLED_APPS = [
     'restourant',
     'services_pr',
     'drf_spectacular',
-
-
 ]
 
 MIDDLEWARE = [
@@ -101,7 +99,7 @@ DATABASES = {
         'NAME': 'hack_v2',
         'USER': 'bekbolsun',
         'PASSWORD': '1',
-        'HOST': 'localhost',
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
@@ -211,7 +209,7 @@ CACHES = {
     }
 }
 
-REDIS_HOST = '127.0.0.1'
+REDIS_HOST = 'redis'
 REDIS_PORT = 6379
 
 CACHES = {
